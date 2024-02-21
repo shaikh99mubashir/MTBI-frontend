@@ -1,0 +1,33 @@
+.types-datiled {
+
+    .type-banner {
+        height: 400px;
+        background-image: url(../../assets/images/explorers_Virtuoso_ISTP_personality_header.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow-y: hidden;
+
+        .st1 {
+            fill: #d8a537;
+        }
+
+        .st0 {
+            fill: #ffffff;
+        }
+
+        .type-info {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            text-align: center;
+            top: 137px;
+            right: 14%;
+            z-index: 1;
+            color: white;
+        }
+    }
+
+}

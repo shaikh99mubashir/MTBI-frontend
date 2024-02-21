@@ -1,0 +1,78 @@
+.result-templete {
+    overflow: hidden;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .result-card {
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px grey;
+        height: 90%;
+        width: 80%;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2% 0px;
+        background: rgb(0, 212, 255);
+        background: linear-gradient(180deg, rgba(0, 212, 255, 1) 0%, rgba(199, 199, 199, 1) 0%, rgba(180, 190, 177, 1) 0%, rgba(186, 195, 184, 1) 0%, rgba(220, 220, 220, 1) 25%, rgba(255, 255, 255, 1) 58%);
+
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .dots-div {
+        width: 100px;
+        // margin-left: 81px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dots {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: rgb(206, 206, 206);
+        cursor: pointer;
+
+    }
+
+    .active-dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: rgb(0, 100, 13);
+        cursor: pointer;
+    }
+    .button-next{
+        width: 150px;
+
+    }
+
+    @media (max-width:767px) {
+        .result-card {
+            height: 100vh;
+            border-radius: 0px;
+            width: 100%;
+            padding: 12% 0px;
+        }
+        
+        .card-footer{
+            padding: 0px 10px;
+        }
+        .button-next{
+            width: 62px;
+    
+        }
+    }
+
+}

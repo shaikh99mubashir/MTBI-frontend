@@ -1,0 +1,235 @@
+
+$red: #b52735;
+$white: #fff;
+.bg-image{
+    background-image: url('../../assets/images/home-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.text span {
+color: $red;
+font-size: 30px;
+font-weight: 600;
+}
+.text {
+font-size: 30px;
+margin-top: 10%;
+}
+.text2 {
+font-size: 18px;
+margin-top: 2%;
+font-weight: 600;
+}
+
+.book-home-button{
+    background-color: $red;
+    border: none;
+    color: $white;
+    padding: 5px 20px 5px 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.about{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight: 600;
+margin-top: 30px;
+}
+.about span{
+color: $red;
+}
+.about-hd span{
+color: $red;
+font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 600;
+
+}
+.about-p span{
+font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 600;
+padding: 0px 150px 20px 150px;
+text-align: center;
+}
+
+
+// .main-home-page {
+
+
+//   .banner-home {
+//     // background-color: green;
+//     min-height: 18rem;
+//   }
+
+//   .card-row {
+//     position: absolute;
+//     top: 123px;
+
+//     h3 {
+//       text-align: center;
+//     }
+//   }
+
+//   .home-page-card {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     flex-direction: column;
+//     min-height: 220px;
+//     box-shadow: 0px 0px 10px grey;
+//     background-color: white;
+//     gap: 3%;
+
+//     span {
+//       text-align: center;
+//     }
+//   }
+
+//   .question-section {
+//     margin-top: 10rem;
+//     padding-right: 8%;
+//     padding-left: 8%;
+//   }
+
+//   .question_div {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     border-bottom: 1px solid rgb(185, 185, 185);
+//     padding: 3% 0px 4% 0px;
+    
+//   }
+//   .disabled_div{
+//     pointer-events: none;
+//     opacity: 0.4;
+//   }
+//   .radio{
+//     &:focus{
+//       .disabled_div{
+//         pointer-events: none;
+//         opacity: 0.4;
+//       }
+//     }
+//   }
+//   .logout_div{
+//     display: flex;
+//     justify-content: end;
+//     button{
+//       position: absolute;
+//       top: 10px;
+//       right: 10px;
+//       background-color: transparent;
+//       border: 1px solid white;
+//       color: white;
+//       font-weight: 400;
+//       border-radius: 10px;
+//       padding: 10px;
+//       &:hover{
+//         background-color: rgba(255, 255, 255, 0.164);
+//         // color: green;
+//       }
+
+//     }
+    
+//   }
+//   .radio-buttons {
+//     cursor: pointer !important;
+//   }
+
+//   .selected {
+//     height: 3px;
+//     width: 3px;
+//     border-radius: 15px;
+//     background-color: #3197EE;
+//   }
+
+
+//   .radio {
+//     cursor: pointer;
+//     user-select: none;
+//     text-align: left;
+
+//     &+.radio {
+//       margin-top: 12px;
+//     }
+
+//     input {
+//       display: none;
+
+//       &+span {
+//         display: inline-block;
+//         position: relative;
+//         padding-left: 30px;
+
+//         &:before {
+//           content: '';
+//           display: block;
+//           position: absolute;
+//           top: 0px;
+//           left: 0px;
+//           border-radius: 50%;
+//           margin-right: 5px;
+//           width: 16px;
+//           height: 16px;
+//           border: 1px solid #ccc;
+//           background: #fff;
+//           margin-top: 4px;
+//         }
+
+//         &:after {
+//           content: '';
+//           display: block;
+//           width: 10px;
+//           height: 10px;
+//           background: #222;
+//           position: absolute;
+//           border-radius: 50%;
+//           top: 7px;
+//           left: 3px;
+//           opacity: 0;
+//           transform: scale(0, 0);
+//           transition: all .2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+//         }
+//       }
+
+//       &:checked+span:after {
+//         opacity: 1;
+//         transform: scale(1, 1);
+//       }
+//     }
+//   }
+
+//   @media (max-width:767px) {
+//     .card-row {
+//       position: unset;
+//       padding: 0px 2rem;
+//       // top: 123px;
+//     }
+
+//     .banner-home {
+//       padding-bottom: 2rem;
+//     }
+
+//     .question-section {
+//       margin-top: 3rem;
+//       padding-right: 1rem;
+//       padding-left: 1rem;
+
+//       h3 {
+//         text-align: center;
+//       }
+//     }
+//   }
+// }

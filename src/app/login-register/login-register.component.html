@@ -1,0 +1,88 @@
+<div class="main-home-page">
+    <div class="row">
+        <div class="col-12 col-md-6 logo-div">
+            <img src="assets/images/web-logo.png" alt="">
+            <img src="assets/images/second-logo.png" alt="">
+        </div>
+        <div class="col-12 col-md-6  login-div">
+            <button class="btn btn-danger">Unlock the Power of Personality Testing </button>
+            <button class="btn  btn-success" (click)="open(content)">Login / Register</button>
+        </div>
+    </div>
+    <!-- login modal -->
+    <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">{{formTitle}}</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="loginForm">
+            <div *ngIf="isLoginForm">
+                <div class="mb-3">
+                    <label  class="form-label">Email address</label>
+                    <input formControlName="email" type="email" class="form-control" 
+                        aria-describedby="emailHelp">
+                        <div *ngIf="!isEmailValid" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div *ngIf="isEmailValid" id="emailHelp" class="text-danger">Email required</div>
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Password</label>
+                    <input formControlName="password"  type="password" class="form-control" >
+                    <div *ngIf="isPassValid" id="emailHelp" class="text-danger">Password required</div>
+                </div>
+            </div>
+            <div class="row" *ngIf="!isLoginForm">
+                <div class="mb-3">
+                    <label  class="form-label">Student ID</label>
+                    <input formControlName="stdID" type="text" class="form-control" 
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Student Name</label>
+                    <input formControlName="stdName" type="text" class="form-control" 
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Father Name</label>
+                    <input formControlName="stdFatherName" type="text" class="form-control" 
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label " >Email address</label>
+                    <input formControlName="email" type="email" class="form-control" 
+                        aria-describedby="emailHelp">
+                    <div *ngIf="!isEmailValid" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <div *ngIf="isEmailValid" id="emailHelp" class="text-danger">Email required</div>
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Password</label>
+                    <input formControlName="password"  type="password" class="form-control" >
+                    <div *ngIf="isPassValid" id="emailHelp" class="text-danger">Password required</div>
+                </div>
+                <div class="mb-3" class="col-12 col-md-6">
+                    <label  class="form-label">Semester</label>
+                    <input formControlName="stdSemester" type="number" class="form-control" 
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3" class="col-12 col-md-6">
+                    <label  class="form-label">Year</label>
+                    <input formControlName="stdYear" type="number" class="form-control" 
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Contact Number</label>
+                    <input formControlName="stdContactNumber" type="number" class="form-control" >
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" (click)="submit()" >Submit</button>
+        </form>
+        </div>
+        <div class="modal-footer">
+            <div style="text-align: center;">
+                <span *ngIf="!isLoginForm">Already have an account <span  style="cursor: pointer; color: blue;"   (click)="navigateToForm(formTitle)" >Login</span></span>
+                <span *ngIf="isLoginForm">Don't have an account <span style="cursor: pointer; color: blue;"  (click)="navigateToForm(formTitle)" >Register</span></span>
+            </div>
+        </div>
+    </ng-template>
+</div>
+<app-loader *ngIf="loader"></app-loader>
